@@ -18,7 +18,6 @@
 	if(empno == null){
 		empno = "100001";
 	}
-	
 %>
 <!DOCTYPE html>
 <html>
