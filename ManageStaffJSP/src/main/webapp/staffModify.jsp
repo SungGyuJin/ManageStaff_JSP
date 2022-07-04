@@ -19,44 +19,56 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+	
+td{
+	width: 50%;
+}
+input{
+	width: 100%;
+}
+</style>
 </head>
 <body>
-	<h3>Low-Mart 직원조회/수정</h3>
+	<br>
+	<h3>직원조회/수정</h3>
 	<br>
 	<form action="staffModify" method="post">
-	<table border="1">
+	<table style="text-align: center;">
 		<tr>
-			<td>직원번호(자율발생)</td>
+			<td class="table-primary">직원번호(자율발생)</td>
 			<td><input type="text" id="empno" name="empno" value="<%= rs.getString("empno") %>" readonly="readonly" /></td>
 		</tr>
 		<tr>
-			<td>직원성명</td>
+			<td class="table-primary">직원성명</td>
 			<td><input type="text" id="empname" name="empname" value="<%= rs.getString("empname") %>" /></td>
 		</tr>
 		<tr>
-			<td>전화번호</td>
+			<td class="table-primary">전화번호</td>
 			<td><input type="text" id="phone" name="phone" value="<%= rs.getString("phone") %>" /></td>
 		</tr>
 		<tr>
-			<td>주소</td>
+			<td class="table-primary">주소</td>
 			<td><input type="text" id="address" name="address" value="<%= rs.getString("address") %>" /></td>
 		</tr>
 		<tr>
-			<td>입사일자</td>
+			<td class="table-primary">입사일자</td>
 			<td><input type="text" id="startdate" name="startdate" value="<%= rs.getDate("startdate") %>" /></td>
 		</tr>
 		<tr>
-			<td>판매등급[A:BEST, B:GOOD, C:NORMAL]</td>
+			<td class="table-primary">판매등급[A:BEST, B:GOOD, C:NORMAL]</td>
 			<td><input type="text" id="grade" name="grade" value="<%= rs.getString("grade") %>" /></td>
 		</tr>
 		<tr>
-			<td>근무지역</td>
+			<td class="table-primary">근무지역</td>
 			<td><input type="text" id="city" name="city" value="<%= rs.getString("city") %>" /></td>
 		</tr>
 		<tr>
-			<td colspan="2">
+			<td>
 				<input type="submit" value="수정"	 onClick="return regChk()" />
-				<input type="button" value="조회" onClick="location.href='staffList.jsp'"/>
+			</td>
+			<td>
+				<input type="button" value="취소" onClick="location.href='staffList.jsp'"/>
 			</td>
 		</tr>
 	</table>
@@ -111,7 +123,7 @@
 			return false;
 		}
 		
-		alert("수정완료.");
+		alert("수정완료");
 		
 	}
 	

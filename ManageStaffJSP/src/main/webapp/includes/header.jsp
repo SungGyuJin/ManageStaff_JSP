@@ -6,26 +6,34 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-	table{
-		margin: auto;
-		text-align: center;
-	}
-	h1, h2, h3{
-		text-align: center;
-	}
+*{
+	margin: 0;
+	padding: 0;
+}
+table{
+	margin: auto;
+}
+h1, h2, h3{
+	text-align: center;
+}
+header{
+	background-color: pink;
+}
+#btn_modify{
+	width: 100%;
+}
 </style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
 <header>
-	<h1>Low-Mart 직원 관리 ver 1.0</h1>
+	<h1>Manage Staff ver 2.0</h1>
+
+	<nav class="table-primary" style="text-align: center;">
+		<a href="staffReg.jsp">직원등록</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="staffList.jsp">직원목록조회/수정</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="index.jsp">홈으로</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</nav>
 </header>
-
-<nav>
-	<a href="staffReg.jsp">직원등록</a>
-	<a href="staffList.jsp">직원목록조회/수정</a>
-	<a href="staffSales.jsp">직원매출조회</a>
-	<a href="index.jsp">홈으로</a>
-</nav>
-
 </body>
 </html>

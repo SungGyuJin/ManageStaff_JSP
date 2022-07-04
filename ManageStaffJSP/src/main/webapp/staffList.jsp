@@ -17,19 +17,26 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+td{
+	width: 10%;
+}
+</style>
 </head>
 <body>
-	<h3>직원목록 조회/수정 프로그램</h3>
-	<table border="1">
+	<br>
+	<h3>직원목록 조회/수정</h3>
+	<br>
+	<table style="text-align: center;">
 		<thead>
 			<tr>
-				<th>직원번호</th>
-				<th>직원성명</th>
-				<th>전화번호</th>
-				<th>주소</th>
-				<th>입사일자</th>
-				<th>판매등급</th>
-				<th>근무지역</th>
+				<th class="table-primary">직원번호</th>
+				<th class="table-primary">직원성명</th>
+				<th class="table-primary">전화번호</th>
+				<th class="table-primary">주소</th>
+				<th class="table-primary">입사일자</th>
+				<th class="table-primary">판매등급</th>
+				<th class="table-primary">근무지역</th>
 			</tr>
 		</thead>
 		<tbody>
