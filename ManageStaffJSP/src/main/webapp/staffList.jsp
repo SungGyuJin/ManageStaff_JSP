@@ -93,7 +93,7 @@ td{
 			
 			if(chkBox[i].checked == true){
 				staffChk = true;
-				alert("삭제완료.")
+				alert("삭제완료.");
 				break;
 			}
 		}

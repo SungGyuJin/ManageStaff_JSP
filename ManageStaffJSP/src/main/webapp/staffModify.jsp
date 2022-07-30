@@ -123,7 +123,7 @@ input{
 			return false;
 		}
 		
-		alert("수정완료");
+		alert("수정완료.");
 		
 	}
 	

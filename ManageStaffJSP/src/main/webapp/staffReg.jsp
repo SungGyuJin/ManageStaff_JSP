@@ -129,19 +129,9 @@ input{
 			return false;
 		}
 		
-		alert("등록완료")
+		alert("등록완료.");
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 </script>
