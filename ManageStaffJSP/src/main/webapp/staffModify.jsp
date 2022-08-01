@@ -27,13 +27,49 @@ td{
 input{
 	width: 100%;
 }
+#modifybtn{
+	height:30px;
+	font-style: italic;
+	font-weight: bold;
+	padding: 0;
+	border: none;
+	background: none;
+	background: #48D1CC;
+}
+#modifybtn:hover{
+	background: #20B2AA;
+}
+#cancelBtn{
+	height:30px;
+	font-style: italic;
+	font-weight: bold;
+	padding: 0;
+	border: none;
+	background: none;;
+	background: #D3D3D3;
+}
+#cancelBtn:hover{
+	background: #808080;
+}
+#delBtn{
+	height:30px;
+	font-style: italic;
+	font-weight: bold;
+	padding: 0;
+	border: none;
+	background: none;
+	background: #FFA07A;
+}
+#delBtn:hover{
+	background: #FA8072;
+}
 </style>
 </head>
 <body>
 	<br>
 	<h3>직원조회/수정</h3>
 	<br>
-	<form action="staffModify" method="post">
+	<form id="modifyFm" method="post">
 	<table style="text-align: center;">
 		<tr>
 			<td class="table-primary">직원번호(자율발생)</td>
@@ -65,16 +101,22 @@ input{
 		</tr>
 		<tr>
 			<td>
-				<input type="submit" value="수정"	 onClick="return regChk()" />
+				<input type="submit" id="modifybtn" value="수정"	 onClick="return regChk()" formaction="staffModify"/>
 			</td>
 			<td>
-				<input type="button" value="취소" onClick="location.href='staffList.jsp'"/>
+				<input type="button" id="cancelBtn" value="취소" onClick="location.href='staffList.jsp'"/>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" id="delBtn" value="삭제" formaction="staffDel">
 			</td>
 		</tr>
 	</table>
 	</form>
 <script>
 	
+	var empno = document.querySelector("#empno");
 	var empname = document.querySelector("#empname");
 	var phone = document.querySelector("#phone");
 	var address = document.querySelector("#address");
@@ -122,8 +164,6 @@ input{
 			grade.focus();
 			return false;
 		}
-		
-		alert("수정완료.");
 		
 	}
 	

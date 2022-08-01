@@ -27,6 +27,7 @@ public class staffModify extends HttpServlet {
 		String startdate = request.getParameter("startdate");
 		String grade = request.getParameter("grade");
 		String city = request.getParameter("city");
+		String functionNum = "2";
 		
 		String sql = "Update emp_tbl_01 set "
 				   + "empname = ?"
@@ -62,7 +63,7 @@ public class staffModify extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		response.sendRedirect("staffList.jsp");
+		response.sendRedirect("staffList.jsp?staffNum=" + empno + "&functionNum=" + functionNum);
 		
 	}
 

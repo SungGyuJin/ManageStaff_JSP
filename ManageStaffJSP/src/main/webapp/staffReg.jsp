@@ -31,6 +31,31 @@ td{
 input{
 	width: 100%;
 }
+#regBtn{
+	height:30px;
+	font-style: italic;
+	font-weight: bold;
+	padding: 0;
+	border: none;
+	background: none;
+	background: #48D1CC;
+}
+#regBtn:hover{
+	background: #20B2AA;
+}
+#cancelBtn{
+	height:30px;
+	font-style: italic;
+	font-weight: bold;
+	height:30px;
+	padding: 0;
+	border: none;
+	background: none;;
+	background: #D3D3D3;
+}
+#cancelBtn:hover{
+	background: #808080;
+}
 </style>
 </head>
 <body>
@@ -69,14 +94,16 @@ input{
 		</tr>
 		<tr>
 			<td>
-				<input type="submit" value="등록"	 onClick="return regChk()" />
+				<input type="submit" id="regBtn" value="등록"	 onClick="return regChk()" />
 			</td>
 			<td>
-				<input type="button" value="취소" onClick="location.href='staffList.jsp'"/>
+				<input type="button" id="cancelBtn" value="취소" onClick="location.href='staffList.jsp'" />
 			</td>
 		</tr>
 	</table>
 	</form>
+	
+	
 	
 <%@ include file="../includes/footer.jsp" %>
 <script>
@@ -128,8 +155,6 @@ input{
 			grade.focus();
 			return false;
 		}
-		
-		alert("등록완료.");
 		
 	}
 	

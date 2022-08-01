@@ -27,6 +27,7 @@ public class staffReg extends HttpServlet {
 		String startdate = request.getParameter("startdate");
 		String grade = request.getParameter("grade");
 		String city = request.getParameter("city");
+		String functionNum = "1";
 		
 		String sql = "Insert into emp_tbl_01 Values(?, ?, ?, ?, ?, ?, ?)";
 		Connection con = null;
@@ -54,8 +55,8 @@ public class staffReg extends HttpServlet {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		
-		response.sendRedirect("staffList.jsp");
+
+		response.sendRedirect("staffList.jsp?staffNum=" + empno + "&functionNum=" + functionNum);
 		
 	}
 

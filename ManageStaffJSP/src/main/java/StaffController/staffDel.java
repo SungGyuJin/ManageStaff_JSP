@@ -20,7 +20,8 @@ public class staffDel extends HttpServlet {
 		
 		request.setCharacterEncoding("UTF-8");
 		
-		String delChk[] = request.getParameterValues("delChk");
+		String empno = request.getParameter("empno");
+		String functionNum = "3";
 		
 		String sql = "Delete From emp_tbl_01 where empno = ?";
 		Connection con = null;
@@ -30,16 +31,21 @@ public class staffDel extends HttpServlet {
 			con = DBcon.getConnection();
 			pstmt = con.prepareStatement(sql);
 			
-			for(int i = 0; i < delChk.length; i++) {
-				pstmt.setString(1, delChk[i]);
-				pstmt.executeUpdate();
-			}
-			System.out.println("삭제 개수: " + delChk.length);
+			/*
+			 * for(int i = 0; i < delChk.length; i++) { pstmt.setString(1, delChk[i]);
+			 * pstmt.executeUpdate(); }
+			 */
+			
+			pstmt.setString(1, empno);
+			pstmt.executeUpdate();
+			
+			System.out.println("삭제번호: " + empno);
 			
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		response.sendRedirect("staffList.jsp");
+		response.sendRedirect("staffList.jsp?staffNum=" + empno + "&functionNum=" + functionNum);
+		
 	}
 
 }
