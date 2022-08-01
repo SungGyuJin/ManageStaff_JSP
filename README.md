@@ -9,13 +9,14 @@
 
 ### 이용 방법
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회원가입과 로그인없이 프로그램 실행 후 바로 이용 가능하며 원하는 기능을 상단 하늘색 메뉴바에서 선택해서 이용 할 수 있습니다. 아래의 시연영상을 참고해주시기 바랍니다. (등록, 수정, 삭제 순서)
- 1. 등록
+
+## 등록 (아래)
 <img src="https://user-images.githubusercontent.com/79797179/182073333-0fed4515-df50-4212-bd83-2ecce50dba93.gif" width="100%">
 
-2. 수정
+## 수정 (아래)
 <img src="https://user-images.githubusercontent.com/79797179/182073342-37778db0-4aa9-4042-ad43-321a5c715d4e.gif" width="100%">
 
-3. 삭제
+## 삭제 (아래)
 <img src="https://user-images.githubusercontent.com/79797179/182073339-42d921fb-6d12-42b8-95e8-cf04902d101d.gif" width="100%">
 
 ***
