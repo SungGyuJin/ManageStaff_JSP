@@ -1,4 +1,4 @@
-# ManageStaff_JSP
+# 프로젝트명 : Manage Staff ver 2.0 (직원정보 간단게시판)
 
 ### 프로젝트 제작 배경 및 설명
 
