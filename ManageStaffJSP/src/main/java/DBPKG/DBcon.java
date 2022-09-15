@@ -12,7 +12,7 @@ public class DBcon {
 				"jdbc:oracle:thin:@localhost:1521:XE"
 				, "system"
 				, "1234"
-				);
+		);
 		
 		if(con != null) {
 			System.out.println("oracle success");

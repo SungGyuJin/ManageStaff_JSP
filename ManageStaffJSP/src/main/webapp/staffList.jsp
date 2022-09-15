@@ -13,7 +13,7 @@
 	Statement stmt = con.createStatement();
 	ResultSet rs = stmt.executeQuery(sql);
 %>
-<!DOCTYPE html>
+<!DOCTYPE html>\
 <html>
 <head>
 <meta charset="UTF-8">
